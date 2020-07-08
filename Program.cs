@@ -6,17 +6,18 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
-            var myText = "meu texto";
-            var muNumber = 8;
-            var myPrice = 4.099;
-            var myBoolean = false;
-
-            Console.WriteLine("Voce e maior de idade");
+            Console.WriteLine("Qual é a sua idade?");
             var result = Console.ReadLine();
-
-            myBoolean = result == "sim";
-            Console.WriteLine(myBoolean);
-
+            var userAge = Int32.Parse(result);
+        
+            if (userAge > 17)
+            {
+                Console.WriteLine("Sim! Eu sou maior de idade");
+            } 
+            else
+            {
+                Console.WriteLine("Não! Eu sou menor de idade");
+            }
         }
     }
 }
